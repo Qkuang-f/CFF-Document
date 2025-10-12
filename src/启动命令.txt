@@ -1,0 +1,15 @@
+CFF框架文档
+
+创建自动目录：
+
+python D:\QkuangFile\PythonScripts\home\docf_auto_md_toc.py D:\GitHub\CFF-Document\src\docs
+
+重新生成：
+
+docfx docfx.json --serve
+
+docfx docfx.json	（非服务器启动构建）
+
+启动服务器
+
+python -m http.server 5508 --directory D:\GitHub\CFF-Document\src\_site
