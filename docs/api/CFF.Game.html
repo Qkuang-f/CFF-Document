@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Namespace CFF.Game </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Namespace CFF.Game ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="CFF.Game">
+
+  <h1 id="CFF_Game" data-uid="CFF.Game" class="text-break">Namespace CFF.Game</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+
+    <h3 id="classes">
+Classes
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="CFF.Game.AddressableCustomUtility.html">AddressableCustomUtility</a></dt>
+      <dd><p>自定义Addressable工具类</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="CFF.Game.AudioMgr.html">AudioMgr</a></dt>
+      <dd><p>音频管理器</p>
+<p>使用前，必须调用Init()初始化。</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="CFF.Game.CatalogServerData.html">CatalogServerData</a></dt>
+      <dd><p>CDN server Addressable data。用于放置在服务器的JSON数据。</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="CFF.Game.CatalogServerData.CatalogItem.html">CatalogServerData.CatalogItem</a></dt>
+      <dd><p>catalog</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="CFF.Game.CoroutineHandler.html">CoroutineHandler</a></dt>
+      <dd><p>协程处理类</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="CFF.Game.FileStorage.html">FileStorage</a></dt>
+      <dd><p>文件存储</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="CFF.Game.FileStorageQueue.html">FileStorageQueue</a></dt>
+      <dd><p>文件存储队列。提供更加安全的多线程文件存储操作。</p>
+<p>核心思路是保证同一个文件在保存时只有一个线程在操作。</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="CFF.Game.FileUtility.html">FileUtility</a></dt>
+      <dd><p>FileUtility类，提供文件操作的实用方法。</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="CFF.Game.GameObjectPool.html">GameObjectPool</a></dt>
+      <dd><p>GameObject对象池。只是对引用进行回收清理。实际的销毁并不是</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="CFF.Game.GameObjectPoolS.html">GameObjectPoolS</a></dt>
+      <dd><p>复数对象池。需要GameObject有IGameObjectElement接口组件。</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="CFF.Game.GameObjectPoolS.PoolCloneData.html">GameObjectPoolS.PoolCloneData</a></dt>
+      <dd><p>池子数据</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="CFF.Game.GameSequence.html">GameSequence</a></dt>
+      <dd><p>Sequence，全局序列。</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="CFF.Game.GlobalMono.html">GlobalMono</a></dt>
+      <dd><p>全局更新中心。在游戏启动时，会自动创建一个全局更新中心。不会随着场景销毁。可以用于计时，开启携程，注册Update事件等。</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="CFF.Game.PoolElementTag.html">PoolElementTag</a></dt>
+      <dd><p>对象池元素标签</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="CFF.Game.ResMgr.html">ResMgr</a></dt>
+      <dd><p>资源工具</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="CFF.Game.SingletonMono-1.html">SingletonMono&lt;T&gt;</a></dt>
+      <dd><p>继承自MonoBehaviour的单例模式类模板。
+继承后运行时自动创建对象。</p>
+<p>技巧：如果需要初始化，可以在Awake中执行，它本质就是一个mono脚本。</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="CFF.Game.StringUtility.html">StringUtility</a></dt>
+      <dd><p>字符串工具</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="CFF.Game.UIAniBase.html">UIAniBase</a></dt>
+      <dd><p>UI动画基类</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="CFF.Game.UIBase.html">UIBase</a></dt>
+      <dd><p>UI界面的基类</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="CFF.Game.UICooperate.html">UICooperate</a></dt>
+      <dd><p>协同工作组件。</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="CFF.Game.UIInforAttribute.html">UIInforAttribute</a></dt>
+      <dd><p>UI信息属性</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="CFF.Game.UIMgr.html">UIMgr</a></dt>
+      <dd><p>UI管理器。要求，必须挂在Canvas上</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="CFF.Game.UISequence.html">UISequence</a></dt>
+      <dd><p>UI序列</p>
+</dd>
+    </dl>
+    <h3 id="structs">
+Structs
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="CFF.Game.SaveInfo.html">SaveInfo</a></dt>
+      <dd><p>保存信息</p>
+</dd>
+    </dl>
+    <h3 id="enums">
+Enums
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="CFF.Game.UIEventTag.html">UIEventTag</a></dt>
+      <dd><p>UI事件标签</p>
+</dd>
+    </dl>
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

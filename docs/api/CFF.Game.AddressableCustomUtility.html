@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class AddressableCustomUtility </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AddressableCustomUtility ">
+      
+      <meta name="description" content="自定义Addressable工具类">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="CFF.Game.AddressableCustomUtility">
+
+
+
+  <h1 id="CFF_Game_AddressableCustomUtility" data-uid="CFF.Game.AddressableCustomUtility" class="text-break">
+Class AddressableCustomUtility  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="CFF.html">CFF</a>.<a class="xref" href="CFF.Game.html">Game</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>CFF.Game.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>自定义Addressable工具类</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class AddressableCustomUtility</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">AddressableCustomUtility</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="CFF_Game_AddressableCustomUtility_Build_Code" data-uid="CFF.Game.AddressableCustomUtility.Build_Code">
+  Build_Code
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>打包版本号：每次构建新版本，需要递增。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Build_Code</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="CFF_Game_AddressableCustomUtility_CatalogServerDataFileName" data-uid="CFF.Game.AddressableCustomUtility.CatalogServerDataFileName">
+  CatalogServerDataFileName
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Catalog服务器数据文件名。支持相对路径。</p>
+<p>实际的Runtime时拼接逻辑为"{serverURL}/{platformFolder}/[此路径]"。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string CatalogServerDataFileName</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="CFF_Game_AddressableCustomUtility_CustomURL_Server" data-uid="CFF.Game.AddressableCustomUtility.CustomURL_Server">
+  CustomURL_Server
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>自定义地址。用于直接替换本地地址(<a href="http://127.0.0.1:5500/">http://127.0.0.1:5500/</a>)。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string CustomURL_Server</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="CFF_Game_AddressableCustomUtility_HTTP" data-uid="CFF.Game.AddressableCustomUtility.HTTP">
+  HTTP
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>请求地址前缀</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string HTTP = &quot;http&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="CFF_Game_AddressableCustomUtility_LocalURL_Server" data-uid="CFF.Game.AddressableCustomUtility.LocalURL_Server">
+  LocalURL_Server
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>本地地址。本地的资源服务器地址。注：指cdn的根路径，也就是通常的平台文件夹的上一级目录。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string LocalURL_Server = &quot;http://127.0.0.1:5500/&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="CFF_Game_AddressableCustomUtility_MainCatalogFileName" data-uid="CFF.Game.AddressableCustomUtility.MainCatalogFileName">
+  MainCatalogFileName
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>主Catalog文件名。支持相对路径。</p>
+<p>实际的Runtime时拼接逻辑为"{serverURL}/{platformFolder}/[此路径]"。</p>
+<p>注：该文件名仅用于在缓存中查找主Catalog的URL。实际加载主Catalog由Addressable内部自动完成。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string MainCatalogFileName</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="CFF_Game_AddressableCustomUtility_PackCount" data-uid="CFF.Game.AddressableCustomUtility.PackCount">
+  PackCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>包计数：可以通过服务器控制的包计数。用于CDN服务器手动触发更新。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PackCount</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="CFF_Game_AddressableCustomUtility_Test_Count" data-uid="CFF.Game.AddressableCustomUtility.Test_Count">
+  Test_Count
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>测试计数：用于测试，每次测试需要递增。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Test_Count</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="CFF_Game_AddressableCustomUtility_isAddressableInitSucceed" data-uid="CFF.Game.AddressableCustomUtility.isAddressableInitSucceed">
+  isAddressableInitSucceed
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Addressables初始化是否成功</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool isAddressableInitSucceed</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="CFF_Game_AddressableCustomUtility_isCheckCatalogSucceed" data-uid="CFF.Game.AddressableCustomUtility.isCheckCatalogSucceed">
+  isCheckCatalogSucceed
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>检查Catalog是否成功</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool isCheckCatalogSucceed</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="CFF_Game_AddressableCustomUtility_isInfo" data-uid="CFF.Game.AddressableCustomUtility.isInfo">
+  isInfo
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>是否显示信息日志</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool isInfo</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="CFF_Game_AddressableCustomUtility_isTailDate" data-uid="CFF.Game.AddressableCustomUtility.isTailDate">
+  isTailDate
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>是否为尾部日期</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool isTailDate</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="CFF_Game_AddressableCustomUtility_isURLTail" data-uid="CFF.Game.AddressableCustomUtility.isURLTail">
+  isURLTail
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>是否为URL添加尾部参数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool isURLTail</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="CFF_Game_AddressableCustomUtility_CacheWebRequest_" data-uid="CFF.Game.AddressableCustomUtility.CacheWebRequest*"></a>
+
+  <h3 id="CFF_Game_AddressableCustomUtility_CacheWebRequest" data-uid="CFF.Game.AddressableCustomUtility.CacheWebRequest">
+  CacheWebRequest
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>缓存的Web请求（oldurl,UnityWebRequest)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, UnityWebRequest&gt; CacheWebRequest { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <span class="xref">UnityWebRequest</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CFF_Game_AddressableCustomUtility_CatalogServerData_" data-uid="CFF.Game.AddressableCustomUtility.CatalogServerData*"></a>
+
+  <h3 id="CFF_Game_AddressableCustomUtility_CatalogServerData" data-uid="CFF.Game.AddressableCustomUtility.CatalogServerData">
+  CatalogServerData
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Catalog服务器数据: 注意：索引0为主Catalog。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CatalogServerData CatalogServerData { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="CFF.Game.CatalogServerData.html">CatalogServerData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CFF_Game_AddressableCustomUtility_Current_Server_URL_" data-uid="CFF.Game.AddressableCustomUtility.Current_Server_URL*"></a>
+
+  <h3 id="CFF_Game_AddressableCustomUtility_Current_Server_URL" data-uid="CFF.Game.AddressableCustomUtility.Current_Server_URL">
+  Current_Server_URL
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>当前服务器URL(CustomURL_Server)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Current_Server_URL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="CFF_Game_AddressableCustomUtility_AddWebRequestToCache_" data-uid="CFF.Game.AddressableCustomUtility.AddWebRequestToCache*"></a>
+
+  <h3 id="CFF_Game_AddressableCustomUtility_AddWebRequestToCache_System_String_UnityEngine_Networking_UnityWebRequest_" data-uid="CFF.Game.AddressableCustomUtility.AddWebRequestToCache(System.String,UnityEngine.Networking.UnityWebRequest)">
+  AddWebRequestToCache(string, UnityWebRequest)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>添加Web请求到缓存(有一定的条件)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool AddWebRequestToCache(string oldURL, UnityWebRequest webRequest)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>oldURL</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>webRequest</code> <span class="xref">UnityWebRequest</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_Game_AddressableCustomUtility_CheckBundle_" data-uid="CFF.Game.AddressableCustomUtility.CheckBundle*"></a>
+
+  <h3 id="CFF_Game_AddressableCustomUtility_CheckBundle_System_String___System_Action_System_Int64__" data-uid="CFF.Game.AddressableCustomUtility.CheckBundle(System.String[],System.Action{System.Int64})">
+  CheckBundle(string[], Action&lt;long&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>检查资源包大小</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator CheckBundle(string[] assetsKeys, Action&lt;long&gt; onComplete = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assetsKeys</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p>资源键数组</p>
+</dd>
+    <dt><code>onComplete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>&gt;</dt>
+    <dd><p>完成回调，参数为下载大小（字节），-1表示失败</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_Game_AddressableCustomUtility_CheckCatalog_" data-uid="CFF.Game.AddressableCustomUtility.CheckCatalog*"></a>
+
+  <h3 id="CFF_Game_AddressableCustomUtility_CheckCatalog_System_Action_System_Single__System_Action_System_Action_System_Boolean__" data-uid="CFF.Game.AddressableCustomUtility.CheckCatalog(System.Action{System.Single},System.Action,System.Action{System.Boolean})">
+  CheckCatalog(Action&lt;float&gt;, Action, Action&lt;bool&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>检查Catalog更新</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator CheckCatalog(Action&lt;float&gt; progressCallback = null, Action resetProgress = null, Action&lt;bool&gt; onComplete = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>progressCallback</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>resetProgress</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+    <dt><code>onComplete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="CFF_Game_AddressableCustomUtility_CheckCatalog_System_Action_System_Single__System_Action_System_Action_System_Boolean___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>注：正确的进度需要服务器请求头含Content-Length</p>
+</div>
+
+
+
+
+  <a id="CFF_Game_AddressableCustomUtility_DownloadBundle_" data-uid="CFF.Game.AddressableCustomUtility.DownloadBundle*"></a>
+
+  <h3 id="CFF_Game_AddressableCustomUtility_DownloadBundle_System_String___System_Action_System_Single__System_Action_System_Boolean__" data-uid="CFF.Game.AddressableCustomUtility.DownloadBundle(System.String[],System.Action{System.Single},System.Action{System.Boolean})">
+  DownloadBundle(string[], Action&lt;float&gt;, Action&lt;bool&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>下载资源包</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator DownloadBundle(string[] assetKeys, Action&lt;float&gt; progressCallback = null, Action&lt;bool&gt; onComplete = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assetKeys</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p>资源键</p>
+</dd>
+    <dt><code>progressCallback</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd><p>进度回调</p>
+</dd>
+    <dt><code>onComplete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p>完成回调</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_Game_AddressableCustomUtility_GetMainCatalogURLFromCache_" data-uid="CFF.Game.AddressableCustomUtility.GetMainCatalogURLFromCache*"></a>
+
+  <h3 id="CFF_Game_AddressableCustomUtility_GetMainCatalogURLFromCache" data-uid="CFF.Game.AddressableCustomUtility.GetMainCatalogURLFromCache">
+  GetMainCatalogURLFromCache()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取主Catalog的URL。从缓存中，若缓存中没有，则返回&quot;&quot;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetMainCatalogURLFromCache()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_Game_AddressableCustomUtility_GetPlatformFolderName_" data-uid="CFF.Game.AddressableCustomUtility.GetPlatformFolderName*"></a>
+
+  <h3 id="CFF_Game_AddressableCustomUtility_GetPlatformFolderName" data-uid="CFF.Game.AddressableCustomUtility.GetPlatformFolderName">
+  GetPlatformFolderName()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取当前平台的文件夹名称</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetPlatformFolderName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_Game_AddressableCustomUtility_GetWebRequestFromCache_" data-uid="CFF.Game.AddressableCustomUtility.GetWebRequestFromCache*"></a>
+
+  <h3 id="CFF_Game_AddressableCustomUtility_GetWebRequestFromCache_System_String_" data-uid="CFF.Game.AddressableCustomUtility.GetWebRequestFromCache(System.String)">
+  GetWebRequestFromCache(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取Web请求
+如果缓存中存在，则返回缓存的Web请求。
+如果不存在，则返回null。
+特别注意：由于是缓存其他地方的请求，因此使用时，注意判断WebRequest是否已完成。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static UnityWebRequest GetWebRequestFromCache(string oldURL)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>oldURL</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UnityWebRequest</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_Game_AddressableCustomUtility_InitAddressables_" data-uid="CFF.Game.AddressableCustomUtility.InitAddressables*"></a>
+
+  <h3 id="CFF_Game_AddressableCustomUtility_InitAddressables_System_Action_System_Single__" data-uid="CFF.Game.AddressableCustomUtility.InitAddressables(System.Action{System.Single})">
+  InitAddressables(Action&lt;float&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>初始化Addressables</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator InitAddressables(Action&lt;float&gt; progressCallback = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>progressCallback</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_Game_AddressableCustomUtility_IsCatalogURL_" data-uid="CFF.Game.AddressableCustomUtility.IsCatalogURL*"></a>
+
+  <h3 id="CFF_Game_AddressableCustomUtility_IsCatalogURL_System_String_" data-uid="CFF.Game.AddressableCustomUtility.IsCatalogURL(System.String)">
+  IsCatalogURL(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>检查URL是否为Catalog URL
+通过正则表达式匹配文件名格式。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsCatalogURL(string url)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>url</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_Game_AddressableCustomUtility_LoadOtherCatalog_" data-uid="CFF.Game.AddressableCustomUtility.LoadOtherCatalog*"></a>
+
+  <h3 id="CFF_Game_AddressableCustomUtility_LoadOtherCatalog_System_String_System_Action_System_Single__System_Action_System_Boolean__" data-uid="CFF.Game.AddressableCustomUtility.LoadOtherCatalog(System.String,System.Action{System.Single},System.Action{System.Boolean})">
+  LoadOtherCatalog(string, Action&lt;float&gt;, Action&lt;bool&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>加载其他Catalog.(例如其他项目构建的远程资源包)</p>
+<p>注：正确的进度需要服务器请求头含Content-Length</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator LoadOtherCatalog(string catalogPath, Action&lt;float&gt; progressCallback = null, Action&lt;bool&gt; onComplete = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>catalogPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>catalog路径。如果是远程路径，建议传入LocalURL_Server拼接的路径，它会在请求时自动转换为设置的实际CustomServerURL。</p>
+</dd>
+    <dt><code>progressCallback</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>onComplete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_Game_AddressableCustomUtility_RequestCatalogServerDataJson_" data-uid="CFF.Game.AddressableCustomUtility.RequestCatalogServerDataJson*"></a>
+
+  <h3 id="CFF_Game_AddressableCustomUtility_RequestCatalogServerDataJson_System_Int32_" data-uid="CFF.Game.AddressableCustomUtility.RequestCatalogServerDataJson(System.Int32)">
+  RequestCatalogServerDataJson(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>请求Catalog服务器数据Json</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator RequestCatalogServerDataJson(int timeout = 3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>timeout</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_Game_AddressableCustomUtility_SetCustomURL_" data-uid="CFF.Game.AddressableCustomUtility.SetCustomURL*"></a>
+
+  <h3 id="CFF_Game_AddressableCustomUtility_SetCustomURL" data-uid="CFF.Game.AddressableCustomUtility.SetCustomURL">
+  SetCustomURL()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>设置&quot;地址为转换&quot;为&quot;自定义地址转换&quot;。
+请在：[RuntimeInitializeOnLoadMethod]时调用。或在所有逻辑开始之前调用。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetCustomURL()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

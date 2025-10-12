@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>项目文档 </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="项目文档 ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Qkuang-f/CFF-Document/blob/main/src/docs/Custom/Readme.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="项目文档">项目文档</h1>
+
+<p>本项目是基于DLL组合的方式开发的框架。DLL之间可以单向依赖，最终组合成目标框架。</p>
+<p>本项目并非只开发一个框架，而是开发多框架设计。例如游戏基础框架：Game框架、状态帧同步框架、战斗系统。</p>
+<p>多个框架之间肯定需要用到同样的代码库，而一个游戏开发并不需要重复的代码库。</p>
+<p>因此，真正做游戏时，选取多个框架，导出框架用到的DLL，合并DLL。</p>
+<p>例如做Action游戏，需要导出Game、Act战斗系统。如果做卡牌游戏，那么需要导出Game、卡牌战斗系统。导出的同时把框架用到的DLL一并导出。</p>
+<h1 id="内容划分">内容划分</h1>
+<ul>
+<li><p>核心部分：框架的重要部分。</p>
+<p>dll库是多个程序集，其他一个程序集。除DLL库外，其他框架可以由Editor和Runtiem的区分。</p>
+<p>各dll之间没有所属关系，只有依赖关系，因此，不会嵌套命名空间。</p>
+<ul>
+<li>QKLibrary：DLL库，自写、三方代理、三方库</li>
+<li>QKGame</li>
+<li>QKSFSync：状态帧同步</li>
+<li>QKACTSystem</li>
+</ul>
+</li>
+<li><p>辅助部分：和游戏内无关</p>
+<ul>
+<li>辅助工具：如，作者署名和日期更新、DLL导出工具</li>
+<li>Demo代码：测试代码</li>
+</ul>
+</li>
+</ul>
+<p>命名：库的名称和命名空间加<code>QkF</code>前缀，内部名称无所谓。</p>
+<h2 id="项目规划">项目规划</h2>
+<ul>
+<li><p>QkF：框架命名空间，所有的路径在其下。</p>
+<ul>
+<li>一类型一文件，除非私有类型。</li>
+<li>多少情况只需要<code>QkF</code>命名空间。特殊如下：</li>
+<li><code>QkF.Edit</code>：编辑器</li>
+</ul>
+</li>
+<li><p>DLL：其下各种库</p>
+<ul>
+<li>Runtime：Runtime类型核心代码</li>
+<li>Edit：Editor类型核心代码</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>dll规则</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>API返回类型约束</strong>（详见下）。若是私有返回随意。主要避免外界使用时，无意用到三方类型。</td>
+</tr>
+<tr>
+<td>2</td>
+<td>API返回途径：类型、接口、类型成员、方法参数与返回值、继承父类型、实现接口类型</td>
+</tr>
+<tr>
+<td>3</td>
+<td>UnityAPI：禁止返回不稳定类型；允许返回常用稳定的类型。例如：Vector2。</td>
+</tr>
+<tr>
+<td>4</td>
+<td>代理三方库：允许使用三方库实现功能，但不允许直接返回三方库的API类型。（未来替换三方库，只用维护代理库）</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Editor类型库：允许直接返回Unity.Editor的API</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Runtime禁止继承UnityAPI，尤其是Mono</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p>Game：基础游戏框架</p>
+<ul>
+<li>Runtime：运行时</li>
+<li>Edit：编辑器，导出时非编辑器</li>
+</ul>
+</li>
+<li><p>ACT：动作游戏框架</p>
+<ul>
+<li>Runtime</li>
+<li>Edit</li>
+</ul>
+</li>
+<li><p>EditTool：编辑器工具</p>
+<ul>
+<li>和任何框架无关，只是单纯的辅助编辑器工具</li>
+</ul>
+</li>
+</ul>
+<p>注：只有DLL中的代码会导出成dll。Game.Runtiem这种不会。因为在设计上，核心代码都会是DLL的形式存在，Runtime和Editor只是调用DLL库，并且提供少量的外置逻辑。</p>
+<h2 id="项目命名规范">项目命名规范</h2>
+<p>所有类型全部在QkF命名空间下。所有工具路径全部在QkF路径下。</p>
+<p>QkF命名前缀或路径，除了宣誓所属，还有避免冲突的作用。</p>
+<h2 id="act设计">ACT设计</h2>
+<p><strong>帅锅Game</strong></p>
+<p>如果ACT设计需要用到Game中的内容，则帅锅。例如，Act需要加载预制体。而资源加载肯定是Game控制，例如热更等。</p>
+<p>那么Act就不管资源加载，提供一个预制体池，act系统直接从这个池拿取预制体就行。测试阶段写测试代码填充对象池即可。真正游戏时，需要Game和Logic代码去填充此对象池（预加载）</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Qkuang-f/CFF-Document/blob/main/src/docs/Custom/Readme.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

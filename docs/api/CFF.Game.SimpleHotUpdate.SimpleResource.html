@@ -1,0 +1,1675 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SimpleResource </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SimpleResource ">
+      
+      <meta name="description" content="简易资源管理系统。定位：提供简易方便的资源热更管理功能。例如：配置表，简单，小，更新频繁。 注意：由于定位是轻便情况下使用，因此没有过渡考虑性能提升问题。 注意：没有资源的对象池复用和引用计数。">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="CFF.Game.SimpleHotUpdate.SimpleResource">
+
+
+
+  <h1 id="CFF_Game_SimpleHotUpdate_SimpleResource" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource" class="text-break">
+Class SimpleResource  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="CFF.html">CFF</a>.<a class="xref" href="CFF.Game.html">Game</a>.<a class="xref" href="CFF.Game.SimpleHotUpdate.html">SimpleHotUpdate</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>CFF.Game.SimpleHotUpdate.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>简易资源管理系统。定位：提供简易方便的资源热更管理功能。例如：配置表，简单，小，更新频繁。
+注意：由于定位是轻便情况下使用，因此没有过渡考虑性能提升问题。
+注意：没有资源的对象池复用和引用计数。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class SimpleResource</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">SimpleResource</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="CFF_Game_SimpleHotUpdate_SimpleResource_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>常规使用步骤：Init、CheckRemapUpdate、LoadRemapFromCache、CheckGroupDownloadSize、DonwloadResource、LoadResource</p>
+</div>
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="CFF_Game_SimpleHotUpdate_SimpleResource_build_code" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.build_code">
+  build_code
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>构建次数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int build_code</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="CFF_Game_SimpleHotUpdate_SimpleResource_encryptPassword" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.encryptPassword">
+  encryptPassword
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>资源导出时的加密密码。默认&quot;cgf_game&quot;。</p>
+<p>注意：此密码在项目发布后不能修改。否则会导致老用户版本解密热更新资源失败。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string encryptPassword</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="CFF_Game_SimpleHotUpdate_SimpleResource_isUrlTail" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.isUrlTail">
+  isUrlTail
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>URL是否添加尾部参数。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool isUrlTail</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="CFF_Game_SimpleHotUpdate_SimpleResource_isUrlTailDate" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.isUrlTailDate">
+  isUrlTailDate
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>URL是否添加日期参数。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool isUrlTailDate</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="CFF_Game_SimpleHotUpdate_SimpleResource_remapDict" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.remapDict">
+  remapDict
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>资源映射表字典。key为resPath。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, Remap&gt; remapDict</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="CFF.Game.SimpleHotUpdate.Remap.html">Remap</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="CFF_Game_SimpleHotUpdate_SimpleResource_serverURL" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.serverURL">
+  serverURL
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>资源服务器地址。注意：此地址最后带斜杠。例如：http://xxx.com/</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string serverURL</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="CFF_Game_SimpleHotUpdate_SimpleResource_test_count" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.test_count">
+  test_count
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>测试计数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int test_count</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="CFF_Game_SimpleHotUpdate_SimpleResource_timeout_download_assets" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.timeout_download_assets">
+  timeout_download_assets
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>下载资源超时</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int timeout_download_assets</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="CFF_Game_SimpleHotUpdate_SimpleResource_timeout_download_remap" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.timeout_download_remap">
+  timeout_download_remap
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>下载超时</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int timeout_download_remap</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="CFF_Game_SimpleHotUpdate_SimpleResource_timeout_request_assets" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.timeout_request_assets">
+  timeout_request_assets
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>请求资源超时</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int timeout_request_assets</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="CFF_Game_SimpleHotUpdate_SimpleResource_timeout_request_remap" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.timeout_request_remap">
+  timeout_request_remap
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>请求超时</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int timeout_request_remap</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="CFF_Game_SimpleHotUpdate_SimpleResource_version" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.version">
+  version
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>当前资源版本号，会用于拼接目录文件名称。例如&quot;&quot;remap_1.0.csv&quot;。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string version</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="CFF_Game_SimpleHotUpdate_SimpleResource_HashCachePath_" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.HashCachePath*"></a>
+
+  <h3 id="CFF_Game_SimpleHotUpdate_SimpleResource_HashCachePath" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.HashCachePath">
+  HashCachePath
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>资源映射表hash缓存路径。(hash路径)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string HashCachePath { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CFF_Game_SimpleHotUpdate_SimpleResource_PersistentDataPath_" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.PersistentDataPath*"></a>
+
+  <h3 id="CFF_Game_SimpleHotUpdate_SimpleResource_PersistentDataPath" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.PersistentDataPath">
+  PersistentDataPath
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>持久化数据目录下的资源路径。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string PersistentDataPath { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CFF_Game_SimpleHotUpdate_SimpleResource_PersistentDataPathOriginal_" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.PersistentDataPathOriginal*"></a>
+
+  <h3 id="CFF_Game_SimpleHotUpdate_SimpleResource_PersistentDataPathOriginal" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.PersistentDataPathOriginal">
+  PersistentDataPathOriginal
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>持久化数据目录下的原始资源路径。(Application.persistentDataPath)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string PersistentDataPathOriginal { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CFF_Game_SimpleHotUpdate_SimpleResource_RemapCachePath_" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.RemapCachePath*"></a>
+
+  <h3 id="CFF_Game_SimpleHotUpdate_SimpleResource_RemapCachePath" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.RemapCachePath">
+  RemapCachePath
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>资源映射表缓存路径。(remap路径)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string RemapCachePath { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CFF_Game_SimpleHotUpdate_SimpleResource_StreamingAssetsPath_" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.StreamingAssetsPath*"></a>
+
+  <h3 id="CFF_Game_SimpleHotUpdate_SimpleResource_StreamingAssetsPath" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.StreamingAssetsPath">
+  StreamingAssetsPath
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>SteamingAssets目录下的资源路径。(zip路径)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string StreamingAssetsPath { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CFF_Game_SimpleHotUpdate_SimpleResource_server_url_simpleres_" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.server_url_simpleres*"></a>
+
+  <h3 id="CFF_Game_SimpleHotUpdate_SimpleResource_server_url_simpleres" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.server_url_simpleres">
+  server_url_simpleres
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>服务器中资源路径。例如： <a href="http://xxx.com/SimpleRes/">http://xxx.com/SimpleRes/</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string server_url_simpleres { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="CFF_Game_SimpleHotUpdate_SimpleResource_CheckAnyRemapUpdateAsync_" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.CheckAnyRemapUpdateAsync*"></a>
+
+  <h3 id="CFF_Game_SimpleHotUpdate_SimpleResource_CheckAnyRemapUpdateAsync_System_String_System_String_System_String_System_String_System_Action_System_Single__System_Action_System_Int32__" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.CheckAnyRemapUpdateAsync(System.String,System.String,System.String,System.String,System.Action{System.Single},System.Action{System.Int32})">
+  CheckAnyRemapUpdateAsync(string, string, string, string, Action&lt;float&gt;, Action&lt;int&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>请求更新任意资源映射表。url为remap完整路径（http://xxx.com/remap_1.0.csv）。
+成功状态码：-1 失败，0 无更新，1 成功下载更新</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator CheckAnyRemapUpdateAsync(string hashURL, string remapURL, string cacheHashPath, string cacheRemapPath, Action&lt;float&gt; onProgress = null, Action&lt;int&gt; onComplete = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hashURL</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>remap url</p>
+</dd>
+    <dt><code>remapURL</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>remap url</p>
+</dd>
+    <dt><code>cacheHashPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>缓存的hash路径</p>
+</dd>
+    <dt><code>cacheRemapPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>缓存的remap路径</p>
+</dd>
+    <dt><code>onProgress</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd><p>下载进度回调</p>
+</dd>
+    <dt><code>onComplete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd><p>完成回调</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_Game_SimpleHotUpdate_SimpleResource_CheckGroupDownloadSize_" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.CheckGroupDownloadSize*"></a>
+
+  <h3 id="CFF_Game_SimpleHotUpdate_SimpleResource_CheckGroupDownloadSize_System_String_" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.CheckGroupDownloadSize(System.String)">
+  CheckGroupDownloadSize(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>检查资源组下载大小。如果无需下载，则返回0。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static (long, List&lt;Remap&gt;) CheckGroupDownloadSize(string groupName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>groupName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="CFF.Game.SimpleHotUpdate.Remap.html">Remap</a>&gt;)</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_Game_SimpleHotUpdate_SimpleResource_CheckGroupDownloadSizeAsync_" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.CheckGroupDownloadSizeAsync*"></a>
+
+  <h3 id="CFF_Game_SimpleHotUpdate_SimpleResource_CheckGroupDownloadSizeAsync_System_String_System_Action_System_Int64_System_Collections_Generic_List_CFF_Game_SimpleHotUpdate_Remap___" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.CheckGroupDownloadSizeAsync(System.String,System.Action{System.Int64,System.Collections.Generic.List{CFF.Game.SimpleHotUpdate.Remap}})">
+  CheckGroupDownloadSizeAsync(string, Action&lt;long, List&lt;Remap&gt;&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>检测指定组下载大小。如果无需下载，则返回0。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator CheckGroupDownloadSizeAsync(string groupName, Action&lt;long, List&lt;Remap&gt;&gt; onComplete)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>groupName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>onComplete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="CFF.Game.SimpleHotUpdate.Remap.html">Remap</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_Game_SimpleHotUpdate_SimpleResource_CheckRemapUpdateAsync_" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.CheckRemapUpdateAsync*"></a>
+
+  <h3 id="CFF_Game_SimpleHotUpdate_SimpleResource_CheckRemapUpdateAsync_System_Action_System_Single__System_Action_System_Int32__" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.CheckRemapUpdateAsync(System.Action{System.Single},System.Action{System.Int32})">
+  CheckRemapUpdateAsync(Action&lt;float&gt;, Action&lt;int&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>检测Remap是否是最新的，若不是则更新。
+成功状态码：-1 失败，0 无更新，1 成功下载更新</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator CheckRemapUpdateAsync(Action&lt;float&gt; onProgress = null, Action&lt;int&gt; onComplete = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>onProgress</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>onComplete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_Game_SimpleHotUpdate_SimpleResource_CheckResourceDownloadSize_" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.CheckResourceDownloadSize*"></a>
+
+  <h3 id="CFF_Game_SimpleHotUpdate_SimpleResource_CheckResourceDownloadSize_System_String_" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.CheckResourceDownloadSize(System.String)">
+  CheckResourceDownloadSize(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>检查资源下载大小。如果无需下载，则返回0。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long CheckResourceDownloadSize(string resPath)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_Game_SimpleHotUpdate_SimpleResource_ClearAllCache_" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.ClearAllCache*"></a>
+
+  <h3 id="CFF_Game_SimpleHotUpdate_SimpleResource_ClearAllCache" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.ClearAllCache">
+  ClearAllCache()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>清理缓存资源目录下全部资源。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ClearAllCache()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_Game_SimpleHotUpdate_SimpleResource_ClearCacheOutRemap_" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.ClearCacheOutRemap*"></a>
+
+  <h3 id="CFF_Game_SimpleHotUpdate_SimpleResource_ClearCacheOutRemap" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.ClearCacheOutRemap">
+  ClearCacheOutRemap()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>清理缓存资源目录下的非映射资源。(remap之外的资源)
+注意：你需要先加载资源映射表。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;string&gt; ClearCacheOutRemap()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>返回被删除的资源相对路径列表</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_Game_SimpleHotUpdate_SimpleResource_ClearCacheOutRemapAsync_" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.ClearCacheOutRemapAsync*"></a>
+
+  <h3 id="CFF_Game_SimpleHotUpdate_SimpleResource_ClearCacheOutRemapAsync_System_Action_System_Collections_Generic_List_System_String___" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.ClearCacheOutRemapAsync(System.Action{System.Collections.Generic.List{System.String}})">
+  ClearCacheOutRemapAsync(Action&lt;List&lt;string&gt;&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>清理缓存资源</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator ClearCacheOutRemapAsync(Action&lt;List&lt;string&gt;&gt; onComplete = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>onComplete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_Game_SimpleHotUpdate_SimpleResource_ClearCatalog_" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.ClearCatalog*"></a>
+
+  <h3 id="CFF_Game_SimpleHotUpdate_SimpleResource_ClearCatalog" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.ClearCatalog">
+  ClearCatalog()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>清理Catalog。当Catalog解析失败时，会清理Catalog。（目的为了重启时，能重新解压原始的catalog，更新新的catalog）</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ClearCatalog()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_Game_SimpleHotUpdate_SimpleResource_ConvertUTF8String_" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.ConvertUTF8String*"></a>
+
+  <h3 id="CFF_Game_SimpleHotUpdate_SimpleResource_ConvertUTF8String_System_Byte___CFF_Game_SimpleHotUpdate_Remap_" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.ConvertUTF8String(System.Byte[],CFF.Game.SimpleHotUpdate.Remap)">
+  ConvertUTF8String(byte[], Remap)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>将字节数组转换为UTF8字符串。如果加密，则会解密。失败时返回null。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ConvertUTF8String(byte[] bytes, Remap remap)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bytes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>remap</code> <a class="xref" href="CFF.Game.SimpleHotUpdate.Remap.html">Remap</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_Game_SimpleHotUpdate_SimpleResource_DonwloadResource_" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.DonwloadResource*"></a>
+
+  <h3 id="CFF_Game_SimpleHotUpdate_SimpleResource_DonwloadResource_System_String___System_Action_System_Single__System_Action_System_Boolean__" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.DonwloadResource(System.String[],System.Action{System.Single},System.Action{System.Boolean})">
+  DonwloadResource(string[], Action&lt;float&gt;, Action&lt;bool&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>下载资源。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator DonwloadResource(string[] resPaths, Action&lt;float&gt; onProgress = null, Action&lt;bool&gt; onComplete = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resPaths</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+    <dt><code>onProgress</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>onComplete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_Game_SimpleHotUpdate_SimpleResource_DonwloadResourceAsync_" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.DonwloadResourceAsync*"></a>
+
+  <h3 id="CFF_Game_SimpleHotUpdate_SimpleResource_DonwloadResourceAsync_System_Collections_Generic_List_CFF_Game_SimpleHotUpdate_Remap__System_Action_System_Single__System_Action_System_Boolean__" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.DonwloadResourceAsync(System.Collections.Generic.List{CFF.Game.SimpleHotUpdate.Remap},System.Action{System.Single},System.Action{System.Boolean})">
+  DonwloadResourceAsync(List&lt;Remap&gt;, Action&lt;float&gt;, Action&lt;bool&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>下载资源。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator DonwloadResourceAsync(List&lt;Remap&gt; remaps, Action&lt;float&gt; onProgress = null, Action&lt;bool&gt; onComplete = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>remaps</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="CFF.Game.SimpleHotUpdate.Remap.html">Remap</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>onProgress</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>onComplete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_Game_SimpleHotUpdate_SimpleResource_GetMD5FromFileName_" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.GetMD5FromFileName*"></a>
+
+  <h3 id="CFF_Game_SimpleHotUpdate_SimpleResource_GetMD5FromFileName_System_String_" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.GetMD5FromFileName(System.String)">
+  GetMD5FromFileName(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>从文件名获取MD5值。没有返回文件原始名称。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetMD5FromFileName(string fileName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_Game_SimpleHotUpdate_SimpleResource_InitAsync_" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.InitAsync*"></a>
+
+  <h3 id="CFF_Game_SimpleHotUpdate_SimpleResource_InitAsync_System_Action_System_Boolean__" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.InitAsync(System.Action{System.Boolean})">
+  InitAsync(Action&lt;bool&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>初始化资源系统。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator InitAsync(Action&lt;bool&gt; onComplete = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>onComplete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_Game_SimpleHotUpdate_SimpleResource_InitAsync_" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.InitAsync*"></a>
+
+  <h3 id="CFF_Game_SimpleHotUpdate_SimpleResource_InitAsync_System_String_System_String_System_Action_System_Boolean__" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.InitAsync(System.String,System.String,System.Action{System.Boolean})">
+  InitAsync(string, string, Action&lt;bool&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>初始化资源系统: 设置版本号，资源服务器地址，解压资源到缓存目录。
+注意：服务器url必须以斜杠结尾。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator InitAsync(string version, string serverURL, Action&lt;bool&gt; onComplete = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>version</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>serverURL</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>资源服务器地址。注意：此地址最后带斜杠。例如：http://xxx.com/</p>
+</dd>
+    <dt><code>onComplete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_Game_SimpleHotUpdate_SimpleResource_LoadRemapFromCache_" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.LoadRemapFromCache*"></a>
+
+  <h3 id="CFF_Game_SimpleHotUpdate_SimpleResource_LoadRemapFromCache" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.LoadRemapFromCache">
+  LoadRemapFromCache()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>加载资源映射表。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool LoadRemapFromCache()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_Game_SimpleHotUpdate_SimpleResource_LoadRemapFromCache_" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.LoadRemapFromCache*"></a>
+
+  <h3 id="CFF_Game_SimpleHotUpdate_SimpleResource_LoadRemapFromCache_System_String_" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.LoadRemapFromCache(System.String)">
+  LoadRemapFromCache(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>从缓存文件加载资源映射表。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool LoadRemapFromCache(string remapPath)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>remapPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_Game_SimpleHotUpdate_SimpleResource_LoadRemapFromCacheAsync_" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.LoadRemapFromCacheAsync*"></a>
+
+  <h3 id="CFF_Game_SimpleHotUpdate_SimpleResource_LoadRemapFromCacheAsync_System_Action_System_Boolean__" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.LoadRemapFromCacheAsync(System.Action{System.Boolean})">
+  LoadRemapFromCacheAsync(Action&lt;bool&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>加载资源映射表</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator LoadRemapFromCacheAsync(Action&lt;bool&gt; onComplete = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>onComplete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_Game_SimpleHotUpdate_SimpleResource_LoadRemapFromCacheAsync_" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.LoadRemapFromCacheAsync*"></a>
+
+  <h3 id="CFF_Game_SimpleHotUpdate_SimpleResource_LoadRemapFromCacheAsync_System_String_System_Action_System_Boolean__" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.LoadRemapFromCacheAsync(System.String,System.Action{System.Boolean})">
+  LoadRemapFromCacheAsync(string, Action&lt;bool&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>异步加载资源映射表。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator LoadRemapFromCacheAsync(string remapPath, Action&lt;bool&gt; onComplete)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>remapPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>onComplete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_Game_SimpleHotUpdate_SimpleResource_LoadResourceAsync_" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.LoadResourceAsync*"></a>
+
+  <h3 id="CFF_Game_SimpleHotUpdate_SimpleResource_LoadResourceAsync__1_System_String_System_Action___0__" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.LoadResourceAsync``1(System.String,System.Action{``0})">
+  LoadResourceAsync&lt;T&gt;(string, Action&lt;T&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>异步加载资源。注意：如果资源不存在缓存中，并不会下载。失败返回null</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator LoadResourceAsync&lt;T&gt;(string resPath, Action&lt;T&gt; onComplete) where T : Object</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>onComplete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_Game_SimpleHotUpdate_SimpleResource_LoadResourceBytes_" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.LoadResourceBytes*"></a>
+
+  <h3 id="CFF_Game_SimpleHotUpdate_SimpleResource_LoadResourceBytes_System_String_" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.LoadResourceBytes(System.String)">
+  LoadResourceBytes(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>加载二进制资源。失败返回&quot;(null, null)&quot;。
+注意：如果资源不存在缓存中，并不会下载。
+注：如果是文本，需要使用ConvertUTF8String()转UTF8+解密。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static (byte[], Remap) LoadResourceBytes(string resPath)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[], <a class="xref" href="CFF.Game.SimpleHotUpdate.Remap.html">Remap</a>)</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_Game_SimpleHotUpdate_SimpleResource_LoadResourceText_" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.LoadResourceText*"></a>
+
+  <h3 id="CFF_Game_SimpleHotUpdate_SimpleResource_LoadResourceText_System_String_" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.LoadResourceText(System.String)">
+  LoadResourceText(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>加载文本资源。失败返回null。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string LoadResourceText(string resPath)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_Game_SimpleHotUpdate_SimpleResource_LoadResourceTextAsync_" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.LoadResourceTextAsync*"></a>
+
+  <h3 id="CFF_Game_SimpleHotUpdate_SimpleResource_LoadResourceTextAsync_System_String_System_Action_System_String__" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.LoadResourceTextAsync(System.String,System.Action{System.String})">
+  LoadResourceTextAsync(string, Action&lt;string&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>异步加载文本资源。失败返回null。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator LoadResourceTextAsync(string resPath, Action&lt;string&gt; onComplete)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>onComplete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_Game_SimpleHotUpdate_SimpleResource_LoadResource_" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.LoadResource*"></a>
+
+  <h3 id="CFF_Game_SimpleHotUpdate_SimpleResource_LoadResource__1_System_String_" data-uid="CFF.Game.SimpleHotUpdate.SimpleResource.LoadResource``1(System.String)">
+  LoadResource&lt;T&gt;(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>加载资源。注意：如果资源不存在缓存中，并不会下载。失败返回null</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T LoadResource&lt;T&gt;(string resPath) where T : Object</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>目前只支持文本和图片</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
