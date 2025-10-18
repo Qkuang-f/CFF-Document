@@ -33,7 +33,7 @@
         ]
       }
     ],
-    "output": "_site",
+    "output": "D:\\GitHub\\CFF-Document\\docs",
     "template": [
       "default",
       "modern"

@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class StringUtility </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class StringUtility ">
+      
+      <meta name="description" content="特殊字符处理工具">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="CFF.Core.Utility.StringUtility">
+
+
+
+  <h1 id="CFF_Core_Utility_StringUtility" data-uid="CFF.Core.Utility.StringUtility" class="text-break">
+Class StringUtility  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="CFF.html">CFF</a>.<a class="xref" href="CFF.Core.html">Core</a>.<a class="xref" href="CFF.Core.Utility.html">Utility</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>CFF.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>特殊字符处理工具</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class StringUtility</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">StringUtility</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="CFF_Core_Utility_StringUtility_GetMD5Hash_" data-uid="CFF.Core.Utility.StringUtility.GetMD5Hash*"></a>
+
+  <h3 id="CFF_Core_Utility_StringUtility_GetMD5Hash_System_String_System_Boolean_" data-uid="CFF.Core.Utility.StringUtility.GetMD5Hash(System.String,System.Boolean)">
+  GetMD5Hash(string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取字符串的MD5值</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetMD5Hash(string str, bool isCapital = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>str</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>要加密的字符串</p>
+</dd>
+    <dt><code>isCapital</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>是否大写十六进制</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_Core_Utility_StringUtility_NumUnits_" data-uid="CFF.Core.Utility.StringUtility.NumUnits*"></a>
+
+  <h3 id="CFF_Core_Utility_StringUtility_NumUnits_System_Int32_System_Int32_System_String_" data-uid="CFF.Core.Utility.StringUtility.NumUnits(System.Int32,System.Int32,System.String)">
+  NumUnits(int, int, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>数字单位显示，保留一位小数。不返回单位字符</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string NumUnits(int num, int units = 1000, string ff = &quot;F1&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>num</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>units</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>单位数值，默认一千</p>
+</dd>
+    <dt><code>ff</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>保留小数格式，默认F1，1位</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>返回转换后的数值字符串，保留一位小数，且不返回单位字符</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_Core_Utility_StringUtility_Parse_" data-uid="CFF.Core.Utility.StringUtility.Parse*"></a>
+
+  <h3 id="CFF_Core_Utility_StringUtility_Parse__1_System_String_System_Char_System_Char_" data-uid="CFF.Core.Utility.StringUtility.Parse``1(System.String,System.Char,System.Char)">
+  Parse&lt;T&gt;(string, char, char)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>两种拆分符解析出二层数组。分隔符级别越大，范围越大。可以用于配置表解析。装箱操作，不要每帧调用。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T[][] Parse&lt;T&gt;(string str, char splitL1, char splitL2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>str</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>需要解析的字符串</p>
+</dd>
+    <dt><code>splitL1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p>一级分隔符(列)</p>
+</dd>
+    <dt><code>splitL2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p>二级分隔符(行)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>T[][]</dt>
+    <dd><p>返回解析后的二层数组。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>目前只支持int、String</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_Core_Utility_StringUtility_Parse_" data-uid="CFF.Core.Utility.StringUtility.Parse*"></a>
+
+  <h3 id="CFF_Core_Utility_StringUtility_Parse__1_System_String_System_Char_System_Char_System_Char_" data-uid="CFF.Core.Utility.StringUtility.Parse``1(System.String,System.Char,System.Char,System.Char)">
+  Parse&lt;T&gt;(string, char, char, char)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>三种拆分符解析出三层数组。分隔符级别越大，范围越大。可以用于配置表解析。装箱操作，不要每帧调用。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T[][][] Parse&lt;T&gt;(string str, char splitL1, char splitL2, char splitL3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>str</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>需要解析的字符串</p>
+</dd>
+    <dt><code>splitL1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p>一级分隔符(列)</p>
+</dd>
+    <dt><code>splitL2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p>二级分隔符(行)</p>
+</dd>
+    <dt><code>splitL3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p>三级分隔符(表)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>T[][][]</dt>
+    <dd><p>返回解析后的三层数组。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>目前只支持int、String</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_Core_Utility_StringUtility_SplitOutBody_" data-uid="CFF.Core.Utility.StringUtility.SplitOutBody*"></a>
+
+  <h3 id="CFF_Core_Utility_StringUtility_SplitOutBody_System_String_System_String_System_String_" data-uid="CFF.Core.Utility.StringUtility.SplitOutBody(System.String,System.String,System.String)">
+  SplitOutBody(string, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>根据首尾符号，拆分出身体。str中存在多个拆分符号时，以第一个和最后一个为准。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string? SplitOutBody(string headStr, string tailStr, string str)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>headStr</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>头部拆分符号</p>
+</dd>
+    <dt><code>tailStr</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>尾部拆分符号</p>
+</dd>
+    <dt><code>str</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>需要拆分的字符串</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>若不存首尾拆分符号，则返回null</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_Core_Utility_StringUtility_SplitOutHead_" data-uid="CFF.Core.Utility.StringUtility.SplitOutHead*"></a>
+
+  <h3 id="CFF_Core_Utility_StringUtility_SplitOutHead_System_String_System_String_" data-uid="CFF.Core.Utility.StringUtility.SplitOutHead(System.String,System.String)">
+  SplitOutHead(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>根据字符拆分出头部。存在多个拆分字符，以最后一个为准。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string? SplitOutHead(string str, string splitStr)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>str</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>需要拆分的字符串</p>
+</dd>
+    <dt><code>splitStr</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>拆分字符</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>没有返回 null</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_Core_Utility_StringUtility_SplitOutIndex_" data-uid="CFF.Core.Utility.StringUtility.SplitOutIndex*"></a>
+
+  <h3 id="CFF_Core_Utility_StringUtility_SplitOutIndex_System_String_System_Char_System_Int32_" data-uid="CFF.Core.Utility.StringUtility.SplitOutIndex(System.String,System.Char,System.Int32)">
+  SplitOutIndex(string, char, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定字符拆分，允许存在多个拆分符，返回指定索引的项，若超出范围，则返回最后一个拆分字符串。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SplitOutIndex(string str, char splitChar, int outIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>str</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>需要拆分的字符串</p>
+</dd>
+    <dt><code>splitChar</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p>拆分字符</p>
+</dd>
+    <dt><code>outIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>返回索引</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_Core_Utility_StringUtility_SplitOutTail_" data-uid="CFF.Core.Utility.StringUtility.SplitOutTail*"></a>
+
+  <h3 id="CFF_Core_Utility_StringUtility_SplitOutTail_System_String_System_String_" data-uid="CFF.Core.Utility.StringUtility.SplitOutTail(System.String,System.String)">
+  SplitOutTail(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>根据字符，拆分出尾部。存在多拆分字符，以第一个为准。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string? SplitOutTail(string str, string splitStr)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>str</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>需要拆分的字符串</p>
+</dd>
+    <dt><code>splitStr</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>拆分字符</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>没有返回 null</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_Core_Utility_StringUtility_TypeNameSplit_" data-uid="CFF.Core.Utility.StringUtility.TypeNameSplit*"></a>
+
+  <h3 id="CFF_Core_Utility_StringUtility_TypeNameSplit_System_String_" data-uid="CFF.Core.Utility.StringUtility.TypeNameSplit(System.String)">
+  TypeNameSplit(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>typeof(T).Name 获取泛型的类型名称，去除命名空间。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string TypeNameSplit(string typename)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>typename</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>类型名称</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>返回去除命名空间的名称。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

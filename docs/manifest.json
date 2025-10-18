@@ -12,6 +12,48 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CFF.Base.GameWebRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.Base.GameWebRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.Base.GameWebRequest",
+      "Summary": "<p sourcefile=\"api/CFF.Base.GameWebRequest.yml\" sourcestartlinenumber=\"1\">自定义游戏请求</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.Base.ThreadUtility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.Base.ThreadUtility.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.Base.ThreadUtility",
+      "Summary": "<p sourcefile=\"api/CFF.Base.ThreadUtility.yml\" sourcestartlinenumber=\"1\">线程工具</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.Base.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.Base.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.Base",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CFF.Common.GlobalConvert.yml",
       "output": {
         ".html": {
@@ -138,6 +180,48 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CFF.Core.Common.ObjPool-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.Core.Common.ObjPool-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.Core.Common.ObjPool<T>",
+      "Summary": "<p sourcefile=\"api/CFF.Core.Common.ObjPool-1.yml\" sourcestartlinenumber=\"1\">简易对象池</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.Core.Common.ObjPools-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.Core.Common.ObjPools-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.Core.Common.ObjPools<T>",
+      "Summary": "<p sourcefile=\"api/CFF.Core.Common.ObjPools-1.yml\" sourcestartlinenumber=\"1\">简易对象池-复数形式</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.Core.Common.Singleton-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.Core.Common.Singleton-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.Core.Common.Singleton<T>",
+      "Summary": "<p sourcefile=\"api/CFF.Core.Common.Singleton-1.yml\" sourcestartlinenumber=\"1\">泛型单例（加锁）</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CFF.Core.Common.yml",
       "output": {
         ".html": {
@@ -148,6 +232,118 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CFF.Core.Common",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.Core.Debug.ILogListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.Core.Debug.ILogListener.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.Core.Debug.ILogListener",
+      "Summary": "<p sourcefile=\"api/CFF.Core.Debug.ILogListener.yml\" sourcestartlinenumber=\"1\">CFF框架中的log输出监听器接口</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.Core.Debug.Logcf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.Core.Debug.Logcf.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.Core.Debug.Logcf",
+      "Summary": "<p sourcefile=\"api/CFF.Core.Debug.Logcf.yml\" sourcestartlinenumber=\"1\">CFF框架中的log输出</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.Core.Debug.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.Core.Debug.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.Core.Debug",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.Core.Event.EventCenter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.Core.Event.EventCenter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.Core.Event.EventCenter",
+      "Summary": "<p sourcefile=\"api/CFF.Core.Event.EventCenter.yml\" sourcestartlinenumber=\"1\">极简事件中心（单例）</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.Core.Event.EventData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.Core.Event.EventData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.Core.Event.EventData",
+      "Summary": "<p sourcefile=\"api/CFF.Core.Event.EventData.yml\" sourcestartlinenumber=\"1\">事件数据\n注：请通过&quot;Create()&quot;静态函数构造。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.Core.Event.EventTrigger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.Core.Event.EventTrigger.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.Core.Event.EventTrigger",
+      "Summary": "<p sourcefile=\"api/CFF.Core.Event.EventTrigger.yml\" sourcestartlinenumber=\"1\">事件触发器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.Core.Event.IEventReceiver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.Core.Event.IEventReceiver.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.Core.Event.IEventReceiver",
+      "Summary": "<p sourcefile=\"api/CFF.Core.Event.IEventReceiver.yml\" sourcestartlinenumber=\"1\">事件接受器接口</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.Core.Event.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.Core.Event.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.Core.Event",
       "Summary": null
     },
     {
@@ -264,6 +460,160 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CFF.Core.Security.SecurityUtility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.Core.Security.SecurityUtility.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.Core.Security.SecurityUtility",
+      "Summary": "<p sourcefile=\"api/CFF.Core.Security.SecurityUtility.yml\" sourcestartlinenumber=\"1\">安全工具类，提供一些安全相关的实用方法。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.Core.Security.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.Core.Security.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.Core.Security",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.Core.Serialization.BinaryUtility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.Core.Serialization.BinaryUtility.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.Core.Serialization.BinaryUtility",
+      "Summary": "<p sourcefile=\"api/CFF.Core.Serialization.BinaryUtility.yml\" sourcestartlinenumber=\"1\">二进制序列化工具类。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.Core.Serialization.CsvUtility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.Core.Serialization.CsvUtility.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.Core.Serialization.CsvUtility",
+      "Summary": "<p sourcefile=\"api/CFF.Core.Serialization.CsvUtility.yml\" sourcestartlinenumber=\"1\">CSV 通用工具类。</p>\n<p>注：反射序列化只支持public属性，支持Ignore忽略</p>\n<p>注：只支持C#基础类型。不支持自定义类型。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.Core.Serialization.GlobalConvertUtility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.Core.Serialization.GlobalConvertUtility.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.Core.Serialization.GlobalConvertUtility",
+      "Summary": "<p sourcefile=\"api/CFF.Core.Serialization.GlobalConvertUtility.yml\" sourcestartlinenumber=\"1\">全球化转换</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.Core.Serialization.IgnoreAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.Core.Serialization.IgnoreAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.Core.Serialization.IgnoreAttribute",
+      "Summary": "<p sourcefile=\"api/CFF.Core.Serialization.IgnoreAttribute.yml\" sourcestartlinenumber=\"1\">标记该字段在序列化时忽略。目前只用于csv序列化。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.Core.Serialization.JsonUtility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.Core.Serialization.JsonUtility.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.Core.Serialization.JsonUtility",
+      "Summary": "<p sourcefile=\"api/CFF.Core.Serialization.JsonUtility.yml\" sourcestartlinenumber=\"1\">json 通用工具类。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.Core.Serialization.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.Core.Serialization.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.Core.Serialization",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.Core.Utility.CallbackUtility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.Core.Utility.CallbackUtility.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.Core.Utility.CallbackUtility",
+      "Summary": "<p sourcefile=\"api/CFF.Core.Utility.CallbackUtility.yml\" sourcestartlinenumber=\"1\">回调创建通用工具。通过此创建的回调，比反射更快。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.Core.Utility.EnumStorage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.Core.Utility.EnumStorage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.Core.Utility.EnumStorage",
+      "Summary": "<p sourcefile=\"api/CFF.Core.Utility.EnumStorage.yml\" sourcestartlinenumber=\"1\">枚举存储器，字符串转枚举，避免重复通过反射转换</p>\n<p> 通过读取配置表等情况下使用 </p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.Core.Utility.FileUtility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.Core.Utility.FileUtility.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.Core.Utility.FileUtility",
+      "Summary": "<p sourcefile=\"api/CFF.Core.Utility.FileUtility.yml\" sourcestartlinenumber=\"1\">文件处理工具类，提供一些文件相关的实用方法。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CFF.Core.Utility.SpecialStringTool.yml",
       "output": {
         ".html": {
@@ -275,6 +625,20 @@
       "IsMRef": true,
       "Title": "CFF.Core.Utility.SpecialStringTool",
       "Summary": "<p sourcefile=\"api/CFF.Core.Utility.SpecialStringTool.yml\" sourcestartlinenumber=\"1\">特殊字符串工具类</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.Core.Utility.StringUtility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.Core.Utility.StringUtility.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.Core.Utility.StringUtility",
+      "Summary": "<p sourcefile=\"api/CFF.Core.Utility.StringUtility.yml\" sourcestartlinenumber=\"1\">特殊字符处理工具</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -390,6 +754,482 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CFF.FSM.Editor.CacheReferenceFSM.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.FSM.Editor.CacheReferenceFSM.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.FSM.Editor.CacheReferenceFSM",
+      "Summary": "<p sourcefile=\"api/CFF.FSM.Editor.CacheReferenceFSM.yml\" sourcestartlinenumber=\"1\">缓存FSM的全部引用。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.FSM.Editor.FSMUtility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.FSM.Editor.FSMUtility.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.FSM.Editor.FSMUtility",
+      "Summary": "<p sourcefile=\"api/CFF.FSM.Editor.FSMUtility.yml\" sourcestartlinenumber=\"1\">FSM工具类</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.FSM.Editor.HandleFSM.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.FSM.Editor.HandleFSM.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.FSM.Editor.HandleFSM",
+      "Summary": "<p sourcefile=\"api/CFF.FSM.Editor.HandleFSM.yml\" sourcestartlinenumber=\"1\">FSM资源助手：处理FSM资源中，state、condition、variable的操作。操作：添加、移除、移动、排序、条件查询。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.FSM.Editor.TraceFSM.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.FSM.Editor.TraceFSM.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.FSM.Editor.TraceFSM",
+      "Summary": "<p sourcefile=\"api/CFF.FSM.Editor.TraceFSM.yml\" sourcestartlinenumber=\"1\">追踪：State、Condition、Variable。作用：当修改了State、Condition、Variable列表的元素顺序后，更新对应的索引。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.FSM.Editor.TracePropRange.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.FSM.Editor.TracePropRange.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.FSM.Editor.TracePropRange",
+      "Summary": "<p sourcefile=\"api/CFF.FSM.Editor.TracePropRange.yml\" sourcestartlinenumber=\"1\">跟踪属性范围</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.FSM.Editor.WindowFSMCV.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.FSM.Editor.WindowFSMCV.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.FSM.Editor.WindowFSMCV",
+      "Summary": "<p sourcefile=\"api/CFF.FSM.Editor.WindowFSMCV.yml\" sourcestartlinenumber=\"1\">条件+变量编辑器</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.FSM.Editor.WindowFSMState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.FSM.Editor.WindowFSMState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.FSM.Editor.WindowFSMState",
+      "Summary": "<p sourcefile=\"api/CFF.FSM.Editor.WindowFSMState.yml\" sourcestartlinenumber=\"1\">窗口。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.FSM.Editor.WindowTLR.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.FSM.Editor.WindowTLR.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.FSM.Editor.WindowTLR",
+      "Summary": "<p sourcefile=\"api/CFF.FSM.Editor.WindowTLR.yml\" sourcestartlinenumber=\"1\">窗口，顶部、底部、右侧布局</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.FSM.Editor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.FSM.Editor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.FSM.Editor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.FSM.FSMAssets.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.FSM.FSMAssets.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.FSM.FSMAssets",
+      "Summary": "<p sourcefile=\"api/CFF.FSM.FSMAssets.yml\" sourcestartlinenumber=\"1\">状态机资源</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.FSM.FSMConditionAssets.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.FSM.FSMConditionAssets.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.FSM.FSMConditionAssets",
+      "Summary": "<p sourcefile=\"api/CFF.FSM.FSMConditionAssets.yml\" sourcestartlinenumber=\"1\">状态机条件资源。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.FSM.FSMConditionBool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.FSM.FSMConditionBool.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.FSM.FSMConditionBool",
+      "Summary": "<p sourcefile=\"api/CFF.FSM.FSMConditionBool.yml\" sourcestartlinenumber=\"1\">布尔条件</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.FSM.FSMConditionFloat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.FSM.FSMConditionFloat.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.FSM.FSMConditionFloat",
+      "Summary": "<p sourcefile=\"api/CFF.FSM.FSMConditionFloat.yml\" sourcestartlinenumber=\"1\">状态机条件。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.FSM.FSMConditionInt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.FSM.FSMConditionInt.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.FSM.FSMConditionInt",
+      "Summary": "<p sourcefile=\"api/CFF.FSM.FSMConditionInt.yml\" sourcestartlinenumber=\"1\">int条件</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.FSM.FSMConditionItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.FSM.FSMConditionItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.FSM.FSMConditionItem",
+      "Summary": "<p sourcefile=\"api/CFF.FSM.FSMConditionItem.yml\" sourcestartlinenumber=\"1\">条件项</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.FSM.FSMConditionStore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.FSM.FSMConditionStore.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.FSM.FSMConditionStore",
+      "Summary": "<p sourcefile=\"api/CFF.FSM.FSMConditionStore.yml\" sourcestartlinenumber=\"1\">条件存储库;\n说明：int和float均可选逻辑。bool的逻辑是目标变量和配置变量相同返回true。trigger逻辑是目标变量为true，返回true，且使用后自动设置为false。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.FSM.FSMConditionTrigger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.FSM.FSMConditionTrigger.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.FSM.FSMConditionTrigger",
+      "Summary": "<p sourcefile=\"api/CFF.FSM.FSMConditionTrigger.yml\" sourcestartlinenumber=\"1\">触发器条件</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.FSM.FSMERBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.FSM.FSMERBase-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.FSM.FSMERBase<T>",
+      "Summary": "<p sourcefile=\"api/CFF.FSM.FSMERBase-1.yml\" sourcestartlinenumber=\"1\">状态机事件运行时基类，携带泛型的只读资源。如果不携带资源，可以直接继承自FSMEventRuntimeBase。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.FSM.FSMEventBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.FSM.FSMEventBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.FSM.FSMEventBase",
+      "Summary": "<p sourcefile=\"api/CFF.FSM.FSMEventBase.yml\" sourcestartlinenumber=\"1\">fsm的事件基类。用于给状态附加事件。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.FSM.FSMEventOrderTrack.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.FSM.FSMEventOrderTrack.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.FSM.FSMEventOrderTrack",
+      "Summary": "<p sourcefile=\"api/CFF.FSM.FSMEventOrderTrack.yml\" sourcestartlinenumber=\"1\">状态机：事件有序轨道</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.FSM.FSMEventRuntimeBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.FSM.FSMEventRuntimeBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.FSM.FSMEventRuntimeBase",
+      "Summary": "<p sourcefile=\"api/CFF.FSM.FSMEventRuntimeBase.yml\" sourcestartlinenumber=\"1\">状态机事件运行时</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.FSM.FSMLayerAssets.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.FSM.FSMLayerAssets.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.FSM.FSMLayerAssets",
+      "Summary": "<p sourcefile=\"api/CFF.FSM.FSMLayerAssets.yml\" sourcestartlinenumber=\"1\">状态机层资源</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.FSM.FSMLayerRuntime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.FSM.FSMLayerRuntime.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.FSM.FSMLayerRuntime",
+      "Summary": "<p sourcefile=\"api/CFF.FSM.FSMLayerRuntime.yml\" sourcestartlinenumber=\"1\">状态机层运行时</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.FSM.FSMLinkAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.FSM.FSMLinkAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.FSM.FSMLinkAttribute",
+      "Summary": "<p sourcefile=\"api/CFF.FSM.FSMLinkAttribute.yml\" sourcestartlinenumber=\"1\">fsm，链接特性。用于配置连接runtime事件。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.FSM.FSMMenuAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.FSM.FSMMenuAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.FSM.FSMMenuAttribute",
+      "Summary": "<p sourcefile=\"api/CFF.FSM.FSMMenuAttribute.yml\" sourcestartlinenumber=\"1\">用于在FSM编辑器中显示菜单</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.FSM.FSMRuntime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.FSM.FSMRuntime.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.FSM.FSMRuntime",
+      "Summary": "<p sourcefile=\"api/CFF.FSM.FSMRuntime.yml\" sourcestartlinenumber=\"1\">状态机运行时</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.FSM.FSMState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.FSM.FSMState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.FSM.FSMState",
+      "Summary": "<p sourcefile=\"api/CFF.FSM.FSMState.yml\" sourcestartlinenumber=\"1\">状态</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.FSM.FSMStateRuntime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.FSM.FSMStateRuntime.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.FSM.FSMStateRuntime",
+      "Summary": "<p sourcefile=\"api/CFF.FSM.FSMStateRuntime.yml\" sourcestartlinenumber=\"1\">状态机状态运行时</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.FSM.FSMTransitionLine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.FSM.FSMTransitionLine.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.FSM.FSMTransitionLine",
+      "Summary": "<p sourcefile=\"api/CFF.FSM.FSMTransitionLine.yml\" sourcestartlinenumber=\"1\">状态转换线</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.FSM.FSMUtility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.FSM.FSMUtility.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.FSM.FSMUtility",
+      "Summary": "<p sourcefile=\"api/CFF.FSM.FSMUtility.yml\" sourcestartlinenumber=\"1\">FSM 通用工具</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.FSM.FSMVariable-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.FSM.FSMVariable-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.FSM.FSMVariable<T>",
+      "Summary": "<p sourcefile=\"api/CFF.FSM.FSMVariable-1.yml\" sourcestartlinenumber=\"1\">状态机变量。结构体，方便快速复制。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.FSM.FSMVariableStore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.FSM.FSMVariableStore.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.FSM.FSMVariableStore",
+      "Summary": "<p sourcefile=\"api/CFF.FSM.FSMVariableStore.yml\" sourcestartlinenumber=\"1\">状态机变量存储库</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.FSM.Judge.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.FSM.Judge.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.FSM.Judge",
+      "Summary": "<p sourcefile=\"api/CFF.FSM.Judge.yml\" sourcestartlinenumber=\"1\">判断条件枚举。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.FSM.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.FSM.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.FSM",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CFF.Game.AddressableCustomUtility.yml",
       "output": {
         ".html": {
@@ -499,6 +1339,34 @@
       "IsMRef": true,
       "Title": "CFF.Game.CoroutineHandler",
       "Summary": "<p sourcefile=\"api/CFF.Game.CoroutineHandler.yml\" sourcestartlinenumber=\"1\">协程处理类</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.Game.Editor.FileTool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.Game.Editor.FileTool.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.Game.Editor.FileTool",
+      "Summary": "<p sourcefile=\"api/CFF.Game.Editor.FileTool.yml\" sourcestartlinenumber=\"1\">文件工具类，提供一些文件相关的实用方法。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.Game.Editor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.Game.Editor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.Game.Editor",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -1478,6 +2346,118 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CFF.Serialization",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.SimpleHotUpdate.Editor.ResGroupData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.SimpleHotUpdate.Editor.ResGroupData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.SimpleHotUpdate.Editor.ResGroupData",
+      "Summary": "<p sourcefile=\"api/CFF.SimpleHotUpdate.Editor.ResGroupData.yml\" sourcestartlinenumber=\"1\">资源组数据类，用于存储资源组的名称和资源列表。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.SimpleHotUpdate.Editor.ResGroupList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.SimpleHotUpdate.Editor.ResGroupList.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.SimpleHotUpdate.Editor.ResGroupList",
+      "Summary": "<p sourcefile=\"api/CFF.SimpleHotUpdate.Editor.ResGroupList.yml\" sourcestartlinenumber=\"1\">资源组列表，包含多个资源组数据。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.SimpleHotUpdate.Editor.ResGroupUtility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.SimpleHotUpdate.Editor.ResGroupUtility.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.SimpleHotUpdate.Editor.ResGroupUtility",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.SimpleHotUpdate.Editor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.SimpleHotUpdate.Editor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.SimpleHotUpdate.Editor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.SimpleHotUpdate.Remap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.SimpleHotUpdate.Remap.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.SimpleHotUpdate.Remap",
+      "Summary": "<p sourcefile=\"api/CFF.SimpleHotUpdate.Remap.yml\" sourcestartlinenumber=\"1\">资源映射表</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.SimpleHotUpdate.SimpleResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.SimpleHotUpdate.SimpleResource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.SimpleHotUpdate.SimpleResource",
+      "Summary": "<p sourcefile=\"api/CFF.SimpleHotUpdate.SimpleResource.yml\" sourcestartlinenumber=\"1\">简易资源管理系统。定位：提供简易方便的资源热更管理功能。例如：配置表，简单，小，更新频繁。\n注意：由于定位是轻便情况下使用，因此没有过渡考虑性能提升问题。\n注意：没有资源的对象池复用和引用计数。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.SimpleHotUpdate.SimpleResourceConst.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.SimpleHotUpdate.SimpleResourceConst.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.SimpleHotUpdate.SimpleResourceConst",
+      "Summary": "<p sourcefile=\"api/CFF.SimpleHotUpdate.SimpleResourceConst.yml\" sourcestartlinenumber=\"1\">简易资源管理系统常量。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CFF.SimpleHotUpdate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CFF.SimpleHotUpdate.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CFF.SimpleHotUpdate",
       "Summary": null
     },
     {

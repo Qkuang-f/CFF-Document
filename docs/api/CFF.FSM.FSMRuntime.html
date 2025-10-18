@@ -1,0 +1,1413 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class FSMRuntime </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class FSMRuntime ">
+      
+      <meta name="description" content="状态机运行时">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="CFF.FSM.FSMRuntime">
+
+
+
+  <h1 id="CFF_FSM_FSMRuntime" data-uid="CFF.FSM.FSMRuntime" class="text-break">
+Class FSMRuntime  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="CFF.html">CFF</a>.<a class="xref" href="CFF.FSM.html">FSM</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>CFF.FSM.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>状态机运行时</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class FSMRuntime : IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">FSMRuntime</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="CFF.Core.Serialization.GlobalConvertUtility.html#CFF_Core_Serialization_GlobalConvertUtility_ToStringGlobal_System_Object_">GlobalConvertUtility.ToStringGlobal(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="CFF.Core.Serialization.GlobalConvertUtility.html#CFF_Core_Serialization_GlobalConvertUtility_ToTypeGlobal_System_Object_System_Type_">GlobalConvertUtility.ToTypeGlobal(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="CFF.Core.Serialization.GlobalConvertUtility.html#CFF_Core_Serialization_GlobalConvertUtility_TryToTypeGlobal_System_Object_System_Type_System_Object__">GlobalConvertUtility.TryToTypeGlobal(object, Type, out object?)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="CFF_FSM_FSMRuntime_layers" data-uid="CFF.FSM.FSMRuntime.layers">
+  layers
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>状态机层列表</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;FSMLayerRuntime&gt; layers</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="CFF.FSM.FSMLayerRuntime.html">FSMLayerRuntime</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="CFF_FSM_FSMRuntime_owner" data-uid="CFF.FSM.FSMRuntime.owner">
+  owner
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>状态机所属的GameObject</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject owner</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="CFF_FSM_FSMRuntime_variableStore" data-uid="CFF.FSM.FSMRuntime.variableStore">
+  variableStore
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>状态机变量存储库</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FSMVariableStore variableStore</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="CFF.FSM.FSMVariableStore.html">FSMVariableStore</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="CFF_FSM_FSMRuntime_DebugShowState_" data-uid="CFF.FSM.FSMRuntime.DebugShowState*"></a>
+
+  <h3 id="CFF_FSM_FSMRuntime_DebugShowState" data-uid="CFF.FSM.FSMRuntime.DebugShowState">
+  DebugShowState()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>调试显示状态</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DebugShowState()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_FSM_FSMRuntime_Dispose_" data-uid="CFF.FSM.FSMRuntime.Dispose*"></a>
+
+  <h3 id="CFF_FSM_FSMRuntime_Dispose" data-uid="CFF.FSM.FSMRuntime.Dispose">
+  Dispose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>释放资源</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_FSM_FSMRuntime_EmptyState_" data-uid="CFF.FSM.FSMRuntime.EmptyState*"></a>
+
+  <h3 id="CFF_FSM_FSMRuntime_EmptyState_System_Int32_" data-uid="CFF.FSM.FSMRuntime.EmptyState(System.Int32)">
+  EmptyState(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>空闲状态</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EmptyState(int layerIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>layerIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>层索引</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_FSM_FSMRuntime_GetBoolVariable_" data-uid="CFF.FSM.FSMRuntime.GetBoolVariable*"></a>
+
+  <h3 id="CFF_FSM_FSMRuntime_GetBoolVariable_System_Int32_" data-uid="CFF.FSM.FSMRuntime.GetBoolVariable(System.Int32)">
+  GetBoolVariable(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取布尔变量</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetBoolVariable(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>索引</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></dt>
+    <dd><p>索引超出范围</p>
+</dd>
+  </dl>
+
+
+
+  <a id="CFF_FSM_FSMRuntime_GetBoolVariable_" data-uid="CFF.FSM.FSMRuntime.GetBoolVariable*"></a>
+
+  <h3 id="CFF_FSM_FSMRuntime_GetBoolVariable_System_String_" data-uid="CFF.FSM.FSMRuntime.GetBoolVariable(System.String)">
+  GetBoolVariable(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取布尔变量</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetBoolVariable(string variableName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>variableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>变量名</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></dt>
+    <dd><p>变量不存在</p>
+</dd>
+  </dl>
+
+
+
+  <a id="CFF_FSM_FSMRuntime_GetBoolVariableIndex_" data-uid="CFF.FSM.FSMRuntime.GetBoolVariableIndex*"></a>
+
+  <h3 id="CFF_FSM_FSMRuntime_GetBoolVariableIndex_System_String_" data-uid="CFF.FSM.FSMRuntime.GetBoolVariableIndex(System.String)">
+  GetBoolVariableIndex(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取布尔变量索引</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetBoolVariableIndex(string variableName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>variableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>变量名</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>没有返回-1</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_FSM_FSMRuntime_GetFloatVariable_" data-uid="CFF.FSM.FSMRuntime.GetFloatVariable*"></a>
+
+  <h3 id="CFF_FSM_FSMRuntime_GetFloatVariable_System_Int32_" data-uid="CFF.FSM.FSMRuntime.GetFloatVariable(System.Int32)">
+  GetFloatVariable(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取浮点数变量</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetFloatVariable(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>索引</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></dt>
+    <dd><p>索引超出范围</p>
+</dd>
+  </dl>
+
+
+
+  <a id="CFF_FSM_FSMRuntime_GetFloatVariable_" data-uid="CFF.FSM.FSMRuntime.GetFloatVariable*"></a>
+
+  <h3 id="CFF_FSM_FSMRuntime_GetFloatVariable_System_String_" data-uid="CFF.FSM.FSMRuntime.GetFloatVariable(System.String)">
+  GetFloatVariable(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取浮点数变量</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetFloatVariable(string variableName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>variableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>变量名</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></dt>
+    <dd><p>变量不存在</p>
+</dd>
+  </dl>
+
+
+
+  <a id="CFF_FSM_FSMRuntime_GetFloatVariableIndex_" data-uid="CFF.FSM.FSMRuntime.GetFloatVariableIndex*"></a>
+
+  <h3 id="CFF_FSM_FSMRuntime_GetFloatVariableIndex_System_String_" data-uid="CFF.FSM.FSMRuntime.GetFloatVariableIndex(System.String)">
+  GetFloatVariableIndex(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取浮点数变量索引</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetFloatVariableIndex(string variableName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>variableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>变量名</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>没有返回-1</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_FSM_FSMRuntime_GetIntVariable_" data-uid="CFF.FSM.FSMRuntime.GetIntVariable*"></a>
+
+  <h3 id="CFF_FSM_FSMRuntime_GetIntVariable_System_Int32_" data-uid="CFF.FSM.FSMRuntime.GetIntVariable(System.Int32)">
+  GetIntVariable(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取整数变量</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetIntVariable(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>索引</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></dt>
+    <dd><p>索引超出范围</p>
+</dd>
+  </dl>
+
+
+
+  <a id="CFF_FSM_FSMRuntime_GetIntVariable_" data-uid="CFF.FSM.FSMRuntime.GetIntVariable*"></a>
+
+  <h3 id="CFF_FSM_FSMRuntime_GetIntVariable_System_String_" data-uid="CFF.FSM.FSMRuntime.GetIntVariable(System.String)">
+  GetIntVariable(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取整数变量</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetIntVariable(string variableName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>variableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>变量名</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></dt>
+    <dd><p>变量不存在</p>
+</dd>
+  </dl>
+
+
+
+  <a id="CFF_FSM_FSMRuntime_GetIntVariableIndex_" data-uid="CFF.FSM.FSMRuntime.GetIntVariableIndex*"></a>
+
+  <h3 id="CFF_FSM_FSMRuntime_GetIntVariableIndex_System_String_" data-uid="CFF.FSM.FSMRuntime.GetIntVariableIndex(System.String)">
+  GetIntVariableIndex(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取整数变量索引</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetIntVariableIndex(string variableName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>variableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>变量名</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>不能存在返回-1</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_FSM_FSMRuntime_GetLayerCurrentState_" data-uid="CFF.FSM.FSMRuntime.GetLayerCurrentState*"></a>
+
+  <h3 id="CFF_FSM_FSMRuntime_GetLayerCurrentState_System_Int32_" data-uid="CFF.FSM.FSMRuntime.GetLayerCurrentState(System.Int32)">
+  GetLayerCurrentState(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取指定层的状态。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FSMStateRuntime GetLayerCurrentState(int layerIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>layerIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="CFF.FSM.FSMStateRuntime.html">FSMStateRuntime</a></dt>
+    <dd><p>没有返回null</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_FSM_FSMRuntime_GetState_" data-uid="CFF.FSM.FSMRuntime.GetState*"></a>
+
+  <h3 id="CFF_FSM_FSMRuntime_GetState_System_Int32_System_String_" data-uid="CFF.FSM.FSMRuntime.GetState(System.Int32,System.String)">
+  GetState(int, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取指定层，指定名称状态。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FSMStateRuntime GetState(int layerIndex, string stateName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>layerIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>stateName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="CFF.FSM.FSMStateRuntime.html">FSMStateRuntime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_FSM_FSMRuntime_GetTriggerVariable_" data-uid="CFF.FSM.FSMRuntime.GetTriggerVariable*"></a>
+
+  <h3 id="CFF_FSM_FSMRuntime_GetTriggerVariable_System_Int32_" data-uid="CFF.FSM.FSMRuntime.GetTriggerVariable(System.Int32)">
+  GetTriggerVariable(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取触发器变量</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetTriggerVariable(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>索引</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></dt>
+    <dd><p>索引超出范围</p>
+</dd>
+  </dl>
+
+
+
+  <a id="CFF_FSM_FSMRuntime_GetTriggerVariable_" data-uid="CFF.FSM.FSMRuntime.GetTriggerVariable*"></a>
+
+  <h3 id="CFF_FSM_FSMRuntime_GetTriggerVariable_System_String_" data-uid="CFF.FSM.FSMRuntime.GetTriggerVariable(System.String)">
+  GetTriggerVariable(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取触发器变量</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetTriggerVariable(string variableName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>variableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>变量名</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></dt>
+    <dd><p>变量不存在</p>
+</dd>
+  </dl>
+
+
+
+  <a id="CFF_FSM_FSMRuntime_GetTriggerVariableIndex_" data-uid="CFF.FSM.FSMRuntime.GetTriggerVariableIndex*"></a>
+
+  <h3 id="CFF_FSM_FSMRuntime_GetTriggerVariableIndex_System_String_" data-uid="CFF.FSM.FSMRuntime.GetTriggerVariableIndex(System.String)">
+  GetTriggerVariableIndex(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取触发器变量索引</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetTriggerVariableIndex(string variableName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>variableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>变量名</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>没有返回-1</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_FSM_FSMRuntime_IsStateRuning_" data-uid="CFF.FSM.FSMRuntime.IsStateRuning*"></a>
+
+  <h3 id="CFF_FSM_FSMRuntime_IsStateRuning_System_String_" data-uid="CFF.FSM.FSMRuntime.IsStateRuning(System.String)">
+  IsStateRuning(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>判断指定状态是否正在运行</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsStateRuning(string stateName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stateName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>状态名</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_FSM_FSMRuntime_ManualTransaction_" data-uid="CFF.FSM.FSMRuntime.ManualTransaction*"></a>
+
+  <h3 id="CFF_FSM_FSMRuntime_ManualTransaction_System_Int32_System_Int32_System_Int32_" data-uid="CFF.FSM.FSMRuntime.ManualTransaction(System.Int32,System.Int32,System.Int32)">
+  ManualTransaction(int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>手动触发任意条件转换线检测，转换状态。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ManualTransaction(int layerIndex, int stateIndex, int transitionLineIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>layerIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>层索引</p>
+</dd>
+    <dt><code>stateIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>状态索引</p>
+</dd>
+    <dt><code>transitionLineIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>转换线索引</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>若转换，返回下一个状态。若不转换，返回null。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_FSM_FSMRuntime_ManualUpdate_" data-uid="CFF.FSM.FSMRuntime.ManualUpdate*"></a>
+
+  <h3 id="CFF_FSM_FSMRuntime_ManualUpdate_System_Single_" data-uid="CFF.FSM.FSMRuntime.ManualUpdate(System.Single)">
+  ManualUpdate(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>手动更新</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ManualUpdate(float step)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>step</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>帧步长</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_FSM_FSMRuntime_SetBoolVariable_" data-uid="CFF.FSM.FSMRuntime.SetBoolVariable*"></a>
+
+  <h3 id="CFF_FSM_FSMRuntime_SetBoolVariable_System_Int32_System_Boolean_" data-uid="CFF.FSM.FSMRuntime.SetBoolVariable(System.Int32,System.Boolean)">
+  SetBoolVariable(int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>设置布尔变量</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBoolVariable(int index, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>索引</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_FSM_FSMRuntime_SetBoolVariable_" data-uid="CFF.FSM.FSMRuntime.SetBoolVariable*"></a>
+
+  <h3 id="CFF_FSM_FSMRuntime_SetBoolVariable_System_String_System_Boolean_" data-uid="CFF.FSM.FSMRuntime.SetBoolVariable(System.String,System.Boolean)">
+  SetBoolVariable(string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>设置布尔变量</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBoolVariable(string variableName, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>variableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>变量名</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_FSM_FSMRuntime_SetFloatVariable_" data-uid="CFF.FSM.FSMRuntime.SetFloatVariable*"></a>
+
+  <h3 id="CFF_FSM_FSMRuntime_SetFloatVariable_System_Int32_System_Single_" data-uid="CFF.FSM.FSMRuntime.SetFloatVariable(System.Int32,System.Single)">
+  SetFloatVariable(int, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>设置浮点数变量</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFloatVariable(int index, float value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>索引</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_FSM_FSMRuntime_SetFloatVariable_" data-uid="CFF.FSM.FSMRuntime.SetFloatVariable*"></a>
+
+  <h3 id="CFF_FSM_FSMRuntime_SetFloatVariable_System_String_System_Single_" data-uid="CFF.FSM.FSMRuntime.SetFloatVariable(System.String,System.Single)">
+  SetFloatVariable(string, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>设置浮点数变量</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFloatVariable(string variableName, float value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>variableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>变量名</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_FSM_FSMRuntime_SetIntVariable_" data-uid="CFF.FSM.FSMRuntime.SetIntVariable*"></a>
+
+  <h3 id="CFF_FSM_FSMRuntime_SetIntVariable_System_Int32_System_Int32_" data-uid="CFF.FSM.FSMRuntime.SetIntVariable(System.Int32,System.Int32)">
+  SetIntVariable(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>设置整数变量</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetIntVariable(int index, int value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>索引</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_FSM_FSMRuntime_SetIntVariable_" data-uid="CFF.FSM.FSMRuntime.SetIntVariable*"></a>
+
+  <h3 id="CFF_FSM_FSMRuntime_SetIntVariable_System_String_System_Int32_" data-uid="CFF.FSM.FSMRuntime.SetIntVariable(System.String,System.Int32)">
+  SetIntVariable(string, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>设置整数变量</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetIntVariable(string variableName, int value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>variableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>变量名</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_FSM_FSMRuntime_SetTriggerVariable_" data-uid="CFF.FSM.FSMRuntime.SetTriggerVariable*"></a>
+
+  <h3 id="CFF_FSM_FSMRuntime_SetTriggerVariable_System_Int32_System_Boolean_" data-uid="CFF.FSM.FSMRuntime.SetTriggerVariable(System.Int32,System.Boolean)">
+  SetTriggerVariable(int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>设置触发器变量</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTriggerVariable(int index, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>索引</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_FSM_FSMRuntime_SetTriggerVariable_" data-uid="CFF.FSM.FSMRuntime.SetTriggerVariable*"></a>
+
+  <h3 id="CFF_FSM_FSMRuntime_SetTriggerVariable_System_String_System_Boolean_" data-uid="CFF.FSM.FSMRuntime.SetTriggerVariable(System.String,System.Boolean)">
+  SetTriggerVariable(string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>设置触发器变量</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTriggerVariable(string variableName, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>variableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>变量名</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>值</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CFF_FSM_FSMRuntime_StartState_" data-uid="CFF.FSM.FSMRuntime.StartState*"></a>
+
+  <h3 id="CFF_FSM_FSMRuntime_StartState_System_Int32_System_String_" data-uid="CFF.FSM.FSMRuntime.StartState(System.Int32,System.String)">
+  StartState(int, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>启动状态</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartState(int layerIndex, string stateName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>layerIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>层索引</p>
+</dd>
+    <dt><code>stateName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>状态名</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
